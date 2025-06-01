@@ -16,6 +16,6 @@
     "express": "latest",
     "cors": "latest",
     "netlify-lambda": "^1.4.3",
-    "serverless-http": "^1.9.1",
+    "serverless-http": "^1.9.1"
   }
 }
