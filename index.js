@@ -1,3 +1,4 @@
+const serverless = require("serverless-http");
 const express = require('express');
 const net = require('net');
 const dns = require('dns');
@@ -568,3 +569,5 @@ app.get('/api/docs', (req, res) => {
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
 });
+
+module.exports.handler = serverless(app);
