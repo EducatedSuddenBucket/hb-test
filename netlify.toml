@@ -1,0 +1,12 @@
+[functions]
+  external_node_modules = ["express", "cors"]
+  node_bundler = "esbuild"
+  directory = "."
+[[redirects]]
+  force = false
+  from = "/*"
+  status = 200
+  to = "/.netlify/functions/index/:splat"
+
+[build]
+  publish = "public"
