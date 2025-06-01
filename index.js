@@ -1,4 +1,4 @@
-
+const serverless = require("serverless-http");
 const express = require('express');
 const net = require('net');
 const dns = require('dns');
@@ -571,3 +571,4 @@ app.listen(port, () => {
 });
 
 
+module.exports.handler = serverless(app);
