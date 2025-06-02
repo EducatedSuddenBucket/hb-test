@@ -571,6 +571,5 @@ app.listen(port, () => {
 });
 
 module.exports.handler = serverless(app);
-module.exports = serverless(app);
 
 
