@@ -16,6 +16,5 @@
       "dest": "/"
     }
   ],
-  "regions": ["bom1"],
-  "outputDirectory": "public"
+  "regions": ["bom1"]
 }
