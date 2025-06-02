@@ -565,11 +565,8 @@ app.get('/bedrock/:serverIp', (req, res) => {
 app.get('/api/docs', (req, res) => {
   res.sendFile(__dirname + '/public/api-docs.html');
 });
-
+module.exports.handler = serverless(app);
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
 });
-
-
-module.exports = serverless(app);
 
