@@ -12,29 +12,10 @@
   ],
   "routes": [
     {
-      "src": "/style.css",
-      "dest": "/public/style.css"
-    },
-        {
-      "src": "/icon.gif",
-      "dest": "/public/icon.gif"
-    },
-        {
-      "src": "/icon_static.png",
-      "dest": "/public/icon_static.png"
-    },
-    {
-      "src": "/font.woff2",
-      "dest": "/public/font.woff2"
-    },
-    {
-      "src": "/script.js",
-      "dest": "/public/script.js"
-    },
-    {
       "src": "/(.*)",
       "dest": "/"
     }
   ],
   "regions": ["bom1"]
+  "outputDirectory": "public"
 }
