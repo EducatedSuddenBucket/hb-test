@@ -570,6 +570,8 @@ app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
 });
 
-module.exports.handler = serverless(app);
+module.exports.handler = serverless(app, {
+  binary: ['image/png'],
+});
 
 
